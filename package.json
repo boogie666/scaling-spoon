@@ -1,0 +1,42 @@
+{
+  "name": "lens",
+  "version": "1.0.0",
+  "description": "System monitoring tools",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm build && node dist/app.js",
+    "dev-start": "node dist/app.js",
+    "build": "webpack --config ./webpack.deployment.config.js --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boogie666/scaling-spoon.git"
+  },
+  "author": "Adrian Petrus, Bogdan Bugarschi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boogie666/scaling-spoon/issues"
+  },
+  "homepage": "https://github.com/boogie666/scaling-spoon#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "redux": "^3.6.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.15.0"
+  }
+}
